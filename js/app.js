@@ -4,18 +4,25 @@
  * 源转换成我们能够利用的 JSON 对象。它还使用了 Handlebars 模板库和 Jquery.
  */
 
-// 所有的名字和链接都是真实可用的
+// 知乎 腾讯 都不可通过测试
 var allFeeds = [
     {
         name: '优达学城 Blog',
         url: 'http://blog.udacity.com/feed'
-    }, {
-        name: '腾讯CDC',
-        url: 'http://cdc.tencent.com/feed/'
-    }, {
+    }, 
+    // {
+    //     name: '知乎每日精选',
+    //     url: 'https://www.zhihu.com/rss'
+    // },
+    // {
+    //     name: '腾讯CDC',
+    //     url: 'http://cdc.tencent.com/feed/'
+    // }, 
+    {
         name: 'Matrix67(数学爱好者)',
         url: 'http://www.matrix67.com/blog/feed'
-    }, {
+    }, 
+    {
         name: 'TechCrunch中国',
         url: 'http://techcrunch.cn/feed/'
     }
@@ -26,7 +33,7 @@ var allFeeds = [
  */
 function init() {
     // 加载我们定义的第一个源。
-    loadFeed(0);
+    // loadFeed(0);
 }
 
 /* 这个函数用 Google Feed Reader API 加载 RSS 源。然后做一些
